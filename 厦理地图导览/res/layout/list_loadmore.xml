@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/loadmore_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/loadmore_btn"
+        android:layout_width="fill_parent"
+        android:layout_height="40.0dip"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0.0dip"
+        android:background="@drawable/list_item_selector"
+        android:text="加载更多"
+        android:textColor="@color/loadmore_btn_selector"
+        android:textSize="18.0dip" />
+
+    <ProgressBar
+        android:id="@+id/loadmore_progress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/loadmore_btn"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="15.0dip"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/loadmore_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loadmore_btn"
+        android:background="#ffffffff"
+        android:editable="false"
+        android:enabled="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:text="正在加载，请稍候..."
+        android:textSize="12.0dip"
+        android:visibility="invisible" />
+
+</RelativeLayout>

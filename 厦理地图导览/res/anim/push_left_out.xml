@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- 画面转换位置移动动画效果 fromXDelta 属性为动画起始时 X坐标上的位置  toXDelta 属性为动画结束时 X坐标上的位置  duration 属性为动画持续时间 -->
+    <translate
+        android:duration="500"
+        android:fromXDelta="0.0"
+        android:toXDelta="-100.0%p" />
+    <!-- 渐变透明度动画效果 fromAlpha 属性为动画起始时透明度  toAlpha 属性为动画结束时透明度 duration 属性为动画持续时间 -->
+    <alpha
+        android:duration="500"
+        android:fromAlpha="1.0"
+        android:toAlpha="0.1" />
+
+</set>

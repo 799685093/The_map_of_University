@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="0.0dip" >
+
+    <RelativeLayout
+        android:id="@+id/newsdetail_top"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_bk" >
+
+        <ImageButton
+            android:id="@+id/newsdetail_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back_selector"
+            android:src="@drawable/btn_back" />
+
+        <View
+            android:id="@+id/line0"
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/newsdetail_btn_back"
+            android:background="#aa11264f" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/line0"
+            android:background="#009ad6" />
+    </RelativeLayout>
+
+    <ViewFlipper
+        android:id="@+id/news_body_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_below="@id/newsdetail_top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/news_body_flipper"
+        android:background="#FFE7E7E7" >
+
+        <Button
+            android:id="@+id/newsdetails_title_previous_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/newsdetails_title_previous_btn_selector" />
+
+        <Button
+            android:id="@+id/newsdetails_title_next_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/newsdetails_title_next_btn_selector" />
+    </RelativeLayout>
+
+</RelativeLayout>

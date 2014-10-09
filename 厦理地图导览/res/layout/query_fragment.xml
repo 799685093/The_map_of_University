@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/title_bk" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="校内地点查询"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dip"
+        android:layout_margin="10dp"
+        android:background="@drawable/widget_search_bar_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true" >
+
+        <EditText
+            android:id="@+id/site"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2dip"
+            android:layout_marginLeft="15dip"
+            android:layout_marginRight="50dip"
+            android:layout_marginTop="2dip"
+            android:background="#fbfbfb"
+            android:ems="10"
+            android:hint="输入校内场所名称"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/btn_search"
+            android:layout_width="60dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="1dip"
+            android:layout_marginTop="1dip" >
+
+            <RelativeLayout
+                android:layout_width="1px"
+                android:layout_height="45dip"
+                android:layout_centerVertical="true"
+                android:background="#d3d3d3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="搜索"
+                android:textColor="#585858"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/query_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:cacheColorHint="#00000000"
+        android:divider="#dddddd"
+        android:dividerHeight="1px"
+        android:fadingEdge="none"
+        android:listSelector="@drawable/list_item_selector" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/news_body_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/news_body_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#FFE7E7E7"
+        android:fadingEdge="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/news_body_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15.0dip"
+                    android:layout_marginRight="15.0dip"
+                    android:layout_marginTop="15.0dip"
+                    android:text="我是标题"
+                    android:textColor="#FF272727"
+                    android:textSize="18.0dip"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12.0dip"
+                    android:layout_marginRight="12.0dip"
+                    android:layout_marginTop="9.0dip" >
+
+                    <TextView
+                        android:id="@+id/tv_source"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="来源："
+                        android:textColor="#FF888888"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/news_body_source"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_source"
+                        android:text="新闻"
+                        android:textColor="#FF888888"
+                        android:textSize="12.0sp" />
+
+                    <TextView
+                        android:id="@+id/news_body_ptime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="2014年4月24日"
+                        android:textColor="#FF888888"
+                        android:textSize="12.0sp" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/news_body_separator_line"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8.0dip"
+                    android:src="@drawable/list_separator_line"
+                    android:visibility="visible" />
+
+                <ProgressBar
+                    android:id="@+id/news_body_details_loading"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="16.0dip"
+                    android:layout_height="16.0dip"
+                    android:layout_marginLeft="152.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:clickable="false"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/news_body_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10.0dip"
+                android:text="我是标题"
+                android:textColor="#ff000000" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 	1.android:descendantFocusability：ViewGroup阻止其子View接收焦点 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/list_item_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="82.0dip"
+    android:background="@drawable/list_item_selector"
+    android:descendantFocusability="blocksDescendants"
+    android:marqueeRepeatLimit="marquee_forever" >
+
+    <RelativeLayout
+        android:id="@+id/list_item_info_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="82.0dip"
+        android:layout_marginRight="20.0dip" >
+
+        <TextView
+            android:id="@+id/list_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="4.0dip"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="我是title "
+            android:textColor="@color/list_item_title_selector"
+            android:textSize="18.0dip"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/list_item_digest"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/list_item_title"
+            android:layout_marginLeft="14.0dip"
+            android:layout_marginRight="10.0dip"
+            android:layout_marginTop="2.0dip"
+            android:ellipsize="end"
+            android:lines="2"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="摘要..."
+            android:textColor="@color/list_item_digest_selector"
+            android:textSize="12.0dip" />
+
+        <TextView
+            android:id="@+id/list_item_source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/list_item_digest"
+            android:layout_marginBottom="4.0dip"
+            android:layout_marginLeft="14.0dip"
+            android:layout_marginRight="10.0dip"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:text="来源："
+            android:textColor="@color/list_item_source_selector"
+            android:textSize="10.0dip" />
+
+        <TextView
+            android:id="@+id/list_item_ptime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/list_item_source"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="2.0dip"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="5分钟前"
+            android:textColor="@color/list_item_source_selector"
+            android:textSize="10.0dip" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/list_item_go_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="2.0dip"
+        android:layout_toLeftOf="@id/list_item_info_layout"
+        android:background="@drawable/list_item_go_detail_selector" />
+
+</RelativeLayout>

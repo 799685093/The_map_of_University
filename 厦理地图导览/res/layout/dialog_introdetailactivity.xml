@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:ellipsize="marquee"
+            android:text="活动提醒"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_activity_title_dialog"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginRight="15.0dip"
+                android:layout_marginTop="10.0dip"
+                android:text="我是标题"
+                android:textColor="#FF888888"
+                android:textSize="18.0dip"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="9.0dip" >
+
+                <TextView
+                    android:id="@+id/tv_source_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="主办方："
+                    android:textColor="#FF888888"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_Organizers_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_source_dialog"
+                    android:text="主办方"
+                    android:textColor="#FF888888"
+                    android:textSize="12.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="2dp" >
+
+                <TextView
+                    android:id="@+id/tv_time_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="时间："
+                    android:textColor="#FF888888"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_activity_time_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_time_dialog"
+                    android:text="5月8日 周四 00:00 - 5月9日 周五 00:00"
+                    android:textColor="#FF888888"
+                    android:textSize="12.0sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15.0dip"
+                android:layout_marginTop="2dp" >
+
+                <TextView
+                    android:id="@+id/tv_add_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="地点："
+                    android:textColor="#FF888888"
+                    android:textSize="12.0sp" />
+
+                <TextView
+                    android:id="@+id/tv_address_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_add_dialog"
+                    android:text="福建厦门厦门理工学院（集美）"
+                    android:textColor="#FF888888"
+                    android:textSize="12.0sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8.0dip"
+                android:src="@drawable/list_separator_line"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_activity_details_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="8dp"
+            android:text="简介"
+            android:textColor="#FF888888" />
+
+        <com.baidu.mapapi.map.MapView
+            android:id="@+id/mapview_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="36dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/widget_search_bar_bg"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <RelativeLayout
+                android:id="@+id/btn_cancle_dialog"
+                android:layout_width="60dip"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="1dip"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="1dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="取消"
+                    android:textColor="#585858"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="1px"
+                android:layout_height="45dip"
+                android:layout_centerInParent="true"
+                android:background="#d3d3d3" />
+
+            <RelativeLayout
+                android:id="@+id/btn_guide_dialog"
+                android:layout_width="60dip"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="1dip"
+                android:layout_marginRight="60dp"
+                android:layout_marginTop="1dip" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="导航"
+                    android:textColor="#585858"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>
