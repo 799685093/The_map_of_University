@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PlaceServlet</servlet-name>
+    <servlet-class>com.wpy.servlet.PlaceServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>NewsServlet</servlet-name>
+    <servlet-class>com.wpy.servlet.NewsServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ActivityServleat</servlet-name>
+    <servlet-class>com.wpy.servlet.ActivityServleat</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RecourseServlet</servlet-name>
+    <servlet-class>com.wpy.servlet.RecourseServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FeedbackServlet</servlet-name>
+    <servlet-class>com.wpy.servlet.FeedbackServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdataInfoServlet</servlet-name>
+    <servlet-class>com.wpy.servlet.UpdataInfoServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>PlaceServlet</servlet-name>
+    <url-pattern>/servlet/PlaceServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewsServlet</servlet-name>
+    <url-pattern>/servlet/NewsServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ActivityServleat</servlet-name>
+    <url-pattern>/servlet/ActivityServleat</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RecourseServlet</servlet-name>
+    <url-pattern>/servlet/RecourseServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FeedbackServlet</servlet-name>
+    <url-pattern>/servlet/FeedbackServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdataInfoServlet</servlet-name>
+    <url-pattern>/servlet/UpdataInfoServlet</url-pattern>
+  </servlet-mapping>	
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
